@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const GEMINI_API_KEY = 'AIzaSyB4L51zVkZZMfd2CqFC-dKYsfPM3TZUFqg';
+const GEMINI_API_KEY = 'YOUR_API_KEY';
 
 app.post('/api/generate-story', async (req, res) => {
   const { prompt } = req.body;
